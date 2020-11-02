@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos Full Stack Eletro</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- link para acesso arquivo CSS externo -->
+    
+</head>
+<body>
+
+    <!-- Início do Menu -->
+    <nav class="menu">
+        <a href="index.html"> <img src="./imagensFullStack/logotipo.png" alt="Logotipo Full Stack Eletro"> </a>
+        <a href="produtos.html"> Produtos  </a>
+        <a href="loja.html"> Lojas </a>
+        <a href="contato.html"> Contato </a>
+    </nav>
+    <!-- Fim do Menu-->
+
+    <header>
+        <h2>Produtos</h2>
+    </header>
+    
+    <hr class="linhaprincipal">
+
+        <section class= "categoria">
+            <h3> Categorias: </h3> 
+            <br>
+            <ul>
+                 
+                <li onclick="exibir_todos()">Todos (12)</li>
+                <br>
+                <li onclick="exibir_categoria('geladeira')">Geladeira (3)</li>
+                <br>
+                <li onclick="exibir_categoria('fogao')">Fogão (2)</li>
+                <br>
+                <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+                <br>
+                <li onclick="exibir_categoria('maquinadelavar')">Máquina de Lavar Roupa (2)</li>
+                <br>
+                <li onclick="exibir_categoria('lavaloucas')">Lava-louça (2)</li>
+
+            </ul>
+        </section>
+             
+                <br> <br> <br>
+    <section class="produtos">
+
+    <div class="box_produto" id="geladeira" style="display:block">
+        <img src="./imagensFullStack/geladeira_brastemp1.png " width="120px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Refrigerador Brastemp Frost Free com Turbo Ice 500L </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 4.000,00 </strike></p>
+        <p id="preco"> R$ 3.409,00</p>
+    </div>
+
+    <div class="box_produto" id="geladeira" style="display:block">
+        <img src="./imagensFullStack/geladeira_samsung2.png" width="150px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Refrigerador Samsung Frost Free 4 portas - 564 Litros </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 50.000,00 </strike></p>
+        <p id="preco"> R$ 20.999,00</p>
+    </div>
+
+    <div class="box_produto" id="geladeira" style="display:block">
+        <img src="./imagensFullStack/geladeira_electrolux3.png" width="120px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Refrigerador Electrolux Degelo Prático 240 Litros </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 1.569,00 </strike></p>
+        <p id="preco"> R$ 1.199,00 </p>
+    </div>
+
+    </section>
+
+    <section class="produtos">
+
+    <div class="box_produto" id="fogao" style="display:block">
+        <img src= "imagensFullStack/fogao_esmaltec1.png" width="110px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Fogão Esmaltec 4 Bocas Veneza Super com Acendimento Automático </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 999,00 </strike></p>
+        <p id="preco"> R$ 459,00 </p>
+    </div>
+
+
+    <div class="box_produto" id="fogao" style="display:block">
+        <img src="imagensFullStack/fogao_electrolux2.png"  width="120px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Fogão de Piso 4 Bocas e Mesa de Vidro Temperado Electrolux </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 1.299,00 </strike></p>
+        <p id="preco"> R$ 1.189,00 </p>
+    </div>
+
+
+    <div class="box_produto" id="microondas" style="display:block">
+        <img src="./imagensFullStack/microondas_philco1.png"  width="200px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Forno Microondas de Embutir Philco 25 Litros </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 2.000,00 </strike></p>
+        <p id="preco"> R$ 999,00 </p>
+    </div>
+
+    </section>
+
+    <section class="produtos">
+
+    <div class="box_produto" id="microondas" style="display:block">
+        <img src= "./imagensFullStack/microondas_electrolux2.png" width="180px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Forno Microondas Electrolux Menu Kids 20 Litros </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 509,00 </strike></p>
+        <p id="preco"> R$  459,00 </p>
+    </div>
+
+    <div class="box_produto" id="microondas" style="display:block">
+        <img src="./imagensFullStack/microndas_lg3.png"  width="180px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Forno de Microondas LG Tecnologia I Wave 30 Litros </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 729,00 </strike></p>
+        <p id="preco"> R$ 589,00 </p>
+    </div>
+
+    <div class="box_produto" id="maquinadelavar" style="display:block">
+        <img src="./imagensFullStack/lavadora_electrolux1.png"  width="90px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Lavadora Electrolux com Dispenser Autolimpante 16kg </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 2.699,00 </strike></p>
+        <p id="preco"> R$ 1.699,00 </p>
+    </div>
+
+    </section>
+
+    <section class="produtos">
+
+    <div class="box_produto" id="maquinadelavar" style="display:block">
+        <img src="./imagensFullStack/lavadora_electrolux2.png"  width="120px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Lavadora Branca 14kg com Dispenser Autolimpante Electrolux </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 1.999,00 </strike></p>
+        <p id="preco"> R$ 1.599,00 </p>
+    </div>
+
+    <div class="box_produto" id="lavaloucas" style="display:block">
+        <img src="./imagensFullStack/louca_electrolux1.png"  width="120px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Lava-Louças Electrolux 14 Serviços Display Digital </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 6.499,00 </strike></p>
+        <p id="preco"> R$ 4.349,00 </p>
+    </div>
+
+    <div class="box_produto" id="lavaloucas" style="display:block">
+        <img src="./imagensFullStack/louca_brastemp2.png"  width="140px" onclick="darZoom(this)">
+        <br>
+        <p id="descricao"> Lava-Louças Brastemp Ative 8 Serviços </p> 
+        <hr id="divisao">
+        <p id="descricao"> <strike> R$ 3.199,00 </strike></p>
+        <p id="preco"> R$ 1.987,00 </p>
+    </div>
+
+    </section>    
+
+                <br> <br>
+
+    <div class="fpagamento"> 
+        <h4> Formas de Pagamento </h4>
+        <img src="./imagensFullStack/formas_pagamento.png" alt="Formas de Pagamento">
+    </div>
+
+    <footer>
+        &copy; 2020 Recode Pro 
+    </footer>
+
+
+    <script src="script.js"></script> <!-- link para acesso arquivo JS externo (colocar no final do <body> de cada aba!) -->
+
+</body>
+</html>
