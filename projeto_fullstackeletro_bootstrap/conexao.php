@@ -1,7 +1,7 @@
 <?php 
     $servername = "127.0.0.1:3306";
     $username = "root";
-    $password = "M@ltodextrina10"; // todas essas informações estão certas!! Até aqui está td bem, conectou ao BD do MySQL
+    $password = "senha*_*"; // todas essas informações estão certas!! Até aqui está td bem, conectou ao BD do MySQL
     $database = "fullstackeletro";
 
     // Criando a conexão
